@@ -111,9 +111,58 @@ Variables are the most useful part of programming. Sure you can "hard code" some
     |1011|11|
 
 ## Learn data types
+There's lots of ways to represent binary, even using words! In this section we'll go over simple data types that you need to know.
 
+We'll break this down into a few sections
+- Numbers
+    - int (integer)
+        - Whole numbers
+        - e.g. 1,2,-45,2335
+    - float (floating point numbers)
+        - 32 bit decimal numbers (can only be 7 digits)
+        - e.g. 4.2,6.9,-23.73457,3.14
+    - double (double precision floating point numbers)
+        - 64 bit decimal numbers (can be 15 digits) 
+        - e.g. 1.00000000000004
+- Strings/Characters
+    - char
+        - Single character, can be ASCII / UTF-8 / UTF-16 / etc
+        - e.g. 'a', '7', '%', '\u1F60E', '😎'
+    - string
+        - a "string" of characters
+        - e.g. "hi", "hey what's up"
+    - Escape chars
+        - You need to know how to "escape" a character. Let's say you want to add a line break. You hit "Enter", but that doesn't get put on the screen! You have to "escape" it. 
+        - List of common escape chars below
+            - \n - newline (Enter)
+                - If you're on Windows, you'll have to use \r\n
+            - \t - tab
+            - \' - apostrophe
+            - \" - quote
+            - \\\ - back slash
+- True/False
+    - bool (boolean true/false)
+        - Can be set to true or false
+        - Equivelent to 1 or 0
+- Lists
+    - Everything previously was a "primitive" datatype in python. This means it's all built in and you can just set a variable equal to that data type
+        - e.g. foo = "foo", bar = "-3.14", test = 't', cool = '😎'
+    - list
+        - A list of these primitive values
+        - These are useful for keeping track of multiple useful things
+        - e.g. groceries = ["apples","milk","bread","turkey"] 
+            - This is a list of strings
 
 ## Learn how to run python programs
+There are lots of ways to run python programs
 
+- Command line
+    - Open up a terminal, go to where your python file is, and run this
+    - `python3 myfile.py`
+- IDE
+    - VS Code
+    - PyCharm
+    - IDLE
+- Batch / Command / Script files
 
 ## Create a "Hello, World!" application
