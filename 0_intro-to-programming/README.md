@@ -80,6 +80,7 @@ Variables are the most useful part of programming. Sure you can "hard code" some
     - Hexadecimal is base 16, which means it goes to 16 before we add another digit. Since we only have 10 digits, we use 6 letters to represent numbers past 10.
     
     **Table below**
+    
     | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
     |:-:|---|---|---|---|---|---|---|---|---|----|----|----|----|----|----|
     | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | a  | b  | c  | d  | e  | f  |
