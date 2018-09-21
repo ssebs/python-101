@@ -47,4 +47,17 @@ if age < 16:       # Is the age under 16?
 ## Boolean logic
 This would be using things like and, or, not to see if multiple things are true, or not true, etc based on multiple conditions
 
+Example below(logic-1.py)
+```python
+name = "Sebastian"
+
+if "Seb" in name and len(name) < 2:
+    print("AND")
+elif "bas" in name or name.endswith("%"):
+    print("OR")
+elif lower(name) not in "seb":
+    print("NOT")
+```
+
+The above example should result in "OR", because "bas" is found within the *name* variable. It doesn't need to end with "%", since it's an or operator
 
