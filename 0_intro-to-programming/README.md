@@ -6,6 +6,7 @@
 - Learn data types
 - Learn how to run python programs
 - Create a "Hello, World!" application
+- Variables
 
 
 ## Learn concepts of programming
@@ -195,5 +196,28 @@ ssafari@meshinprod12 ~/Desktop $ python3.6 hello.py
 Hello, world!
 ssafari@meshinprod12 ~/Desktop $ 
 ```
+
+## Variables
+You use variables to save numbers/strings/lists in RAM for later use. To use a variable, give it a name that's not taken as a python token (don't use int, def, var, str, etc)
+
+Example of setting variables
+```python
+name = "Sebastian"
+age = 21
+pi = 3.14
+```
+
+To use a variable, you use the name of the variable in place of what you'd want to put there. e.g. instead of `print("Sebastian")`, use `print(name)`
+
+Example of using variables
+```python
+name = "Sebastian"
+age = 21
+
+print("My name is " + name + ", and I am " + str(age) + " years old.")  # This is a comment. It doesn't get run when you run this program
+print("My birthday is today, I'm actually " + str(age + 1) + " years old now.") # use it to document your code!
+
+```
+
 
 ## Done! You can move on to chapter 1
