@@ -209,7 +209,7 @@ pi = 3.14
 
 To use a variable, you use the name of the variable in place of what you'd want to put there. e.g. instead of `print("Sebastian")`, use `print(name)`
 
-Example of using variables
+Example of using variables (variables.py)
 ```python
 name = "Sebastian"
 age = 21
