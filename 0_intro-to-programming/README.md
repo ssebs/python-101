@@ -75,11 +75,20 @@ Variables are the most useful part of programming. Sure you can "hard code" some
     - Which looked like a3 04 6c 
     - Another way to represend hexadecimal numbers is 0x4a
 - What's hexadecimal?
-    - First we have to understand how we typically use numbers. We count up to 9 normally, then once we get to 10, we put a '1' in the 10's slot, and start over. So 12 is really 10 + 2. This is called "base ten"
+    - First we have to understand how we typically use numbers. We count up to 9 normally, then once we get to 10, we put a '1' in the 10's slot, and start over. So 12 is really 10 + 2. This is called "base 10"
     - Hexadecimal is base 16, which means it goes to 16 before we add another digit. Since we only have 10 digits, we use 6 letters to represent numbers past 10.
     
-    
-     
+    **Table below**
+    | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
+    |:-:|---|---|---|---|---|---|---|---|---|----|----|----|----|----|----|
+    | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | a  | b  | c  | d  | e  | f  |
+- Okay but what does 0x5b mean? What is that in base 10?
+    - The 0x part is just stating that it's hexadecimal (see the x?)
+    - 5a is going to be 16*5 + b which is 11
+        - Total is 80 + 11 = 91
+    - It's not super important to know how to do this, just understand the concept
+- What's binary? Just 1's and 0's?
+- 
 
 ## Learn data types
 
