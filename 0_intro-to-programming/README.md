@@ -71,11 +71,12 @@ Variables are the most useful part of programming. Sure you can "hard code" some
 
 
 ## Binary/Hexadecimal 101
+> You may be better off googling this
 - We just saw the machine code above in *hexadecimal*
     - Which looked like a3 04 6c 
     - Another way to represend hexadecimal numbers is 0x4a
-- What's hexadecimal?
-    - First we have to understand how we typically use numbers. We count up to 9 normally, then once we get to 10, we put a '1' in the 10's slot, and start over. So 12 is really 10 + 2. This is called "base 10"
+- First we have to understand how we typically use numbers. We count up to 9 normally, then once we get to 10, we put a '1' in the 10's slot, and start over. So 12 is really 10 + 2. This is called "base 10"
+- What's hexadecimal?    
     - Hexadecimal is base 16, which means it goes to 16 before we add another digit. Since we only have 10 digits, we use 6 letters to represent numbers past 10.
     
     **Table below**
@@ -88,7 +89,26 @@ Variables are the most useful part of programming. Sure you can "hard code" some
         - Total is 80 + 11 = 91
     - It's not super important to know how to do this, just understand the concept
 - What's binary? Just 1's and 0's?
-- 
+    - Same thing as above, but with base 2 instead
+    - Can also be represented as 0b0101
+    - This is easiest shown by table, or by looking at a different tutorial
+    - https://www.mathsisfun.com/binary-number-system.html
+    - https://en.wikipedia.org/wiki/Binary_number#Counting_in_binary
+ 
+    | **Binary**|**Base 10**|
+    |:-----:|:-----:|
+    |0|0|
+    |1|1|
+    |10|2|
+    |11|3|
+    |100|4|
+    |101|5|
+    |110|6|
+    |111|7|
+    |1000|8|
+    |1001|9|
+    |1010|10|
+    |1011|11|
 
 ## Learn data types
 
