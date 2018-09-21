@@ -161,8 +161,38 @@ There are lots of ways to run python programs
     - `python3 myfile.py`
 - IDE
     - VS Code
+        - Good for small projects
+        - Code editor, you can setup debugging tools
+        - Lightweight
     - PyCharm
+        - Good for larger projects
+        - More robust IDE features (better intellisense, highlighting, etc)
     - IDLE
+        - Another option...
 - Batch / Command / Script files
-
+    - Create a .bat or .sh file to run the python program
+        - e.g. *run.bat*
+        ```batch
+            python3 myfile.py some arg >> logfile.txt
+        ```
+        - e.g. *run.sh*
+        ```sh
+            python3 myfile.py some arg >> logfile.txt
+        ```
 ## Create a "Hello, World!" application
+
+Open up your editor of choice, and copy this below and run it.
+
+**Python code**
+```python
+print("Hello, World!")
+```
+**Shell commands to make and run this**
+```shell
+ssafari@meshinprod12 ~/Desktop $ echo 'print("Hello, world!")' > hello.py
+ssafari@meshinprod12 ~/Desktop $ python3.6 hello.py                      
+Hello, world!
+ssafari@meshinprod12 ~/Desktop $ 
+```
+
+## Done! You can move on to chapter 1

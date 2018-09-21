@@ -22,3 +22,23 @@ This repo will have numbered subfolders for each lesson. If you know the basics 
     - Centos / RHEL:
         - You'll have to specify a version i.e. python 3.6 vs python 3
         - `sudo yum install python36`
+
+## Lesson structure
+Lessons will be broken down into chapters. 
+
+0. **Intro to programming**
+    - Learn the basics of what it means to program, what a string is, and how to run "Hello, world!"
+1. **Logic**
+    - Learn how to make decisions with code
+2. **Loops**
+    - Learn how to loop over lists, count to 10, and do something until a requirement is set
+3. **Input**
+    - Learn how to use raw_input to get people's answers, and add some usefulness to your programs
+4. **Functions**
+    - Learn how to create repeatable code
+5. **Objects**
+    - Learn what it means to be object-oriented
+6. **Modules**
+    - Learn how modules are a powerful tool in python
+7. **Files**
+    - Learn how to read, write, and modify files
