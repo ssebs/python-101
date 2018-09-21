@@ -56,3 +56,54 @@ while i4 not in list1:
     list1.append(i4)
     print(i4 + " now in list1")
 print(list1)
+
+## Basics: input
+
+question = "What's your name? "
+answer = input(question)
+print("Name = " + answer)
+
+## Basics: functions
+
+def addTwo(param1):
+    return param1 + 2
+# end addTwo
+
+print(addTwo(46))
+
+## Basics: objects
+
+## Basics: modules
+import os
+
+filename = "text.txt"   # note that this is relative to where you're running the command, not where the .py file is
+
+os.system("pwd")
+os.system("echo \"" + string1 + "\" > " + filename)
+
+## Basics: files
+
+#read
+with open(filename, "r") as f:
+    for line in f:
+        print("from " + filename + ": " + line)
+print("changing file...")
+
+#write
+with open(filename, "w") as f:
+    f.write("Hello from python!")
+#read (again)
+with open(filename, "r") as f:
+    for line in f:
+        print("from " + filename + ": " + line)
+
+print("changing file...")
+#write (append)
+with open(filename, "a") as f:
+    f.write("\n")
+    f.write("Hello from python again!")
+#read (again)
+with open(filename, "r") as f:
+    for line in f:
+        print("from " + filename + ": " + line)
+os.remove(filename)
