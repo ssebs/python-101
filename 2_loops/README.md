@@ -37,6 +37,34 @@ for f in fruit:
 
 ```
 
-
 ##  While loops
+The while loop can be used like a for loop, but can also serve different purposes(like user/file input for example).
 
+
+while.py \<-example showing how it's like a for loop
+```python
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+```
+
+The `break` statement ltes us stop the loop even if the while condition is true
+```python
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+```
+
+You can use the while loop to check for user input, and break if they give a specified reply:
+
+```python
+inp = ""
+while inp != "q":
+    print("input q to quit.")
+    inp = input("Your input: ")
+
+```
