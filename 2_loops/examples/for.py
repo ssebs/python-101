@@ -7,5 +7,7 @@ for i in range(0,5): # 0,5 is going to yield 0,1,2,3,4. This is 5 numbers, but s
 fruit = ["banana", "apple", "kiwi", "strawberry"]
 
 for f in fruit:
-    print("I like to eat " + f)
-
+    if "apple" in f:
+        print("I like to eat " + f)
+    else:
+        print("I don't like " + f)
