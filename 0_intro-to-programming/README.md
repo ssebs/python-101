@@ -7,6 +7,8 @@
 - Learn how to run python programs
 - Create a "Hello, World!" application
 - Variables
+- Data Types & Structures in python
+- Basic Syntax
 
 
 ## Learn concepts of programming
@@ -217,6 +219,100 @@ age = 21
 print("My name is " + name + ", and I am " + str(age) + " years old.")  # This is a comment. It doesn't get run when you run this program
 print("My birthday is today, I'm actually " + str(age + 1) + " years old now.") # use it to document your code!
 
+```
+
+## Data Types & Structures in python
+We went over data types earlier (int, double, string), but we didn't go into how we use it in python. 
+
+In this section, we'll go over how to set variables to these data types, and talk about lists and dictionaries.
+
+Below you'll find some code from the *syntax-cheatsheet.py* file, with the datatype shown as the variable name. (Note: you cannot use the datatype itself as a name, because it's a keyword in python)
+
+```python
+#primitives
+int1 = 4
+
+# Example of casting below. Casting is converting from one data type to another.
+float1 = float(3.5) # by default, when you use a decimal, python assumes you want a double.
+
+double1 = 3.14
+char1 = 'x'
+string1 = "Hello!"
+
+#data structures
+list1 = ["item1","item2","item3"]
+dictionary1 = {"key1":"value1", "key2":"value2"}
+```
+
+You can do useful things to these variables too! Lots of string manipulation, math, and other things that can bring to life some useful features.
+
+```python
+## Basics: string manipulation
+print(string1.lower())
+print(string1.upper())
+print(string1.capitalize())
+print(len(string1))
+
+# [x:y] syntax pics a specified array of characters to pull from the string. Anything with a number will start/end from that index of the string.
+print(string1[:3])  # This goes from the beginning, to the next 3 characters
+print(string1[:-1]) # This goes from the beginning, to all but the last character
+print(string1[1:])  # This starts 1 from the beginning, to the end
+
+## Basics: number calculations
+print("4 + 5 = " + str(4+5))    # addition
+print("4 - 5 = " + str(4-5))    # subtraction
+print("4 * 5 = " + str(4*5))    # multiplication
+print("4 / 5 = " + str(4/5))    # division
+print("4 % 5 = " + str(4%5))    # modulus (divides, then gets the remainder of)
+print("4 ** 5 = " + str(4**5))  # square
+```
+
+## Basic Syntax
+It's hard to explain syntax of a programming language without directly seeing the code, so I'll explain the concept, then show an example.
+
+Setting a variable. You put the variable name on the left of an equals sign, then put what you want to set it to on the right.
+```python
+x = 4
+```
+Lists. Square bracket [] is used to denote a list in python. You put values in these seperated by commas.
+```python
+nums = [4,346,7,535,6,57,435]
+x = 2
+y = 3
+z = 4
+nums2 = [x,y,z]
+```
+
+Conditionals. If/else's should end with a colon character, and the contents of what happend should be indented.
+```python
+x = 3
+y = 5
+if x < y:
+    pass    # do nothing
+elif y > x and True:
+    print("Y is bigger")
+else:
+    pass
+```
+Loops. Same as if/else syntax, but there's likely an 'in' keyword
+```python
+for i in range(5):  # only 1 parameter (just 5) assumes that the first would be 0
+    print(i) 
+# above would print 0,1,2,3,4
+```
+
+Function definitions. You have to define a function name, a possible list of parameters, and a colon.
+```python
+def add(param1,param2):
+    tmp = param1 + param2
+    return tmp
+```
+
+Casting a variable. You put the type that you're casting to as a function and put your variable as a parameter.
+```python
+x = 4.3
+y = int(x)
+print( str(y) ) # output: 4
 ```
 
 

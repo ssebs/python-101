@@ -17,6 +17,7 @@ dictionary1 = {"key1":"value1", "key2":"value2"}
 ## Basics: logic ##
 if int1 < double1:
     print(str(int1) + " is less than " + str(double1))
+    # Note that we have to cast to a string before printing it using str()
 elif char1 in string1:
     print(char1 + " is in " + string1)
 
