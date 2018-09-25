@@ -91,7 +91,31 @@ print(markdown.markdown(sample_md))
 ## Custom modules
 Let's say you want to create your own library, or have some code in a separate file, you can do that with custom modules. The prior would be having a full module, and the latter would be importing a neighboring file as a module.
 
+You would want to create files with functions that you'd use, or if you want the whole file to run, use a full module.
+
 > See custom/ dir for examles
 ### Neighbor files
+To use neighboring python files as modules, import them with the functions that you want to use. 
+
+Examples: 
+
+`neighbor.py`
+```python
+# neighbor.py
+
+def test_neighbor():
+    print("I'm a function in the neighbor.py file under neighbor!")
+```
+
+`use-neighbor.py`
+```python
+import neighbor
+
+neighbor.test_neighbor()
+
+## OUTPUT ##
+# ssafari@meshinprod12 ~/python-101 $ python3.6 6_modules/examples/custom/use-neighbor.py
+# I'm a function in the neighbor.py file under neighbor!
+```
 
 ### Module dir
