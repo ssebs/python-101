@@ -239,6 +239,10 @@ double1 = 3.14
 char1 = 'x'
 string1 = "Hello!"
 
+multi_line_string = '''It start's here
+blah blah blah
+and ends here!'''
+
 #data structures
 list1 = ["item1","item2","item3"]
 dictionary1 = {"key1":"value1", "key2":"value2"}
