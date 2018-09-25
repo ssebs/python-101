@@ -19,6 +19,7 @@ Contrast this to creating your own csv parser (which may seem easy at the time),
 ## Some popular modules & how to use them
 - os
     - examples below:
+    
     ```python
     import os
     os.system("pwd") # run pwd command
@@ -26,6 +27,7 @@ Contrast this to creating your own csv parser (which may seem easy at the time),
     ``` 
 - sys
     - examples below:
+    
     ```python
     import sys
     print(sys.argv) # handles cli arguments
@@ -35,12 +37,14 @@ Contrast this to creating your own csv parser (which may seem easy at the time),
     ``` 
 - shutil
     - examples below:
+    
     ```python
     import shutil
     shutil.copytree("./folder","./folder")   # cp -R ./folder ./folder2
     ``` 
 - csv
     - examples below:
+    
     ```python
     import csv
 
@@ -68,9 +72,11 @@ There are only so many prepackaged modules in python. If you find something you 
 > Note: If you have to use python3.6 [FILE], then you'll have to use pip3.6 instead of regular pip
 
 For example:
+
 ```shell
 $ pip install markdown
 ```
+
 ```python
 import markdown
 sample_md = '''# Sample!
@@ -100,6 +106,7 @@ To use neighboring python files as modules, import them with the functions that 
 Examples: 
 
 `neighbor.py`
+
 ```python
 # neighbor.py
 
@@ -108,6 +115,7 @@ def test_neighbor():
 ```
 
 `use-neighbor.py`
+
 ```python
 import neighbor
 
@@ -127,6 +135,7 @@ Packages
 Packages are a way of structuring Python's module namespace by using "dotted module names". For example, the module name A.B designates a submodule named B in a package named A. Just like the use of modules saves the authors of different modules from having to worry about each other's global variable names, the use of dotted module names saves the authors of multi-module packages like NumPy or Pillow from having to worry about each other's module names.
 
 Suppose you want to design a collection of modules (a "package") for the uniform handling of sound files and sound data. There are many different sound file formats (usually recognized by their extension, for example: .wav, .aiff, .au), so you may need to create and maintain a growing collection of modules for the conversion between the various file formats. There are also many different operations you might want to perform on sound data (such as mixing, adding echo, applying an equalizer function, creating an artificial stereo effect), so in addition you will be writing a never-ending stream of modules to perform these operations. Here's a possible structure for your package (expressed in terms of a hierarchical filesystem):
+
 ```
 sound/                          Top-level package
       __init__.py               Initialize the sound package
@@ -152,6 +161,7 @@ sound/                          Top-level package
               karaoke.py
               ...
 ```
+
 When importing the package, Python searches through the directories on sys.path looking for the package subdirectory.
 
 The __init__.py files are required to make Python treat the directories as containing packages; this is done to prevent directories with a common name, such as string, from unintentionally hiding valid modules that occur later on the module search path. In the simplest case, __init__.py can just be an empty file, but it can also execute initialization code for the package or set the __all__ variable, described later.
